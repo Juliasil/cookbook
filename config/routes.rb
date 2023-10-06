@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  get('/ola' , to: 'home#ola')
+  root         to: 'home#index'
+  get '/ola' , to: 'home#ola'
 end
