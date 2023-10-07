@@ -1,9 +1,5 @@
 class HomeController < ApplicationController
   def index
-    render plain: 'página principal'
+    @recipes = Recipe.all
   end
-  def ola
-    render plain: 'Você está na página (/ola)'
-  end
-
 end
